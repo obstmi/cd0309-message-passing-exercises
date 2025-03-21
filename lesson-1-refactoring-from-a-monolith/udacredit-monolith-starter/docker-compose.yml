@@ -10,7 +10,8 @@ services:
       - FLASK_ENV=development
       - FLASK_APP=app.py
     ports:
-      - "5000:5000"
+      # change the port from 5000 to 5002 to avoid conflict with MacOS Control Center
+      - "5002:5000"
 
   customers_api:
     build: customers_api
