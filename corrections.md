@@ -8,3 +8,10 @@ lsof -i :5000
 Solutions are for example described here: 
 - https://medium.com/@inspiremeashish/port-5000-already-in-use-macos-sonama-issue-69d0adc09157
 - https://twissmueller.medium.com/resolving-the-problem-of-port-5000-already-being-in-use-dd2fe4bad0be
+- maybe it helps to call http://127.0.0.1:5000 instead of http://localhost:5000
+
+## Notes
+### Create a virtual Python environment 
+- python3 -m venv .myvenv
+- source .myvenv/bin/activate
+
