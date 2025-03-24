@@ -8,4 +8,5 @@ __pycache__/
 .DS_Store
 app.log
 database.db
+kafka_2.13-4.0.0/
 
