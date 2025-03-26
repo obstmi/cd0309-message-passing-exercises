@@ -12,9 +12,10 @@ def create_order(order_data):
     # Kafka producer has already been set up in Flask context
     # kafka_producer = g.kafka_producer
     # TODO: send the data using kafka_producer using .send()
+    # format as json and store as binary:
     kafka_data = json.dumps(order_data).encode()
     kafka_producer = g.kafka_producer
-    kafka_producer.send("items", kafka_data)
+    kafka_producer.send("computers", kafka_data)
 
 
 def retrieve_orders():
